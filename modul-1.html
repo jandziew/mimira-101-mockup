@@ -1,83 +1,211 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Moduł 1: Profile wyszukiwania — Mimira 101</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--p:#165ffc;--ph:#0d4fd6;--bl:#f0f4f9;--ba:#f5f6f8;--w:#fff;--h:#13374f;--b:#1e293b;--m:#94a3b8;--br:#e2e8f0;--r:16px;--rs:12px;--mw:1100px;--f:'Inter',-apple-system,sans-serif}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--f);color:var(--b);background:var(--w);line-height:1.6;-webkit-font-smoothing:antialiased}a{color:var(--p);text-decoration:none}nav{height:64px;display:flex;align-items:center;justify-content:space-between;max-width:var(--mw);margin:0 auto;padding:0 24px}.nl{font-size:18px;font-weight:700;color:var(--h);text-decoration:none}.nl span{color:var(--p)}.nk{display:flex;gap:24px;align-items:center}.nk a{font-size:14px;font-weight:500;color:var(--h);text-decoration:none}.nk a:hover{color:var(--p)}.bn{background:var(--p);color:var(--w)!important;padding:8px 20px;border-radius:var(--rs);font-size:13px;font-weight:600}.bn:hover{background:var(--ph)}.hero{background:var(--bl);padding:80px 24px 64px;text-align:center}.hi{max-width:720px;margin:0 auto}.hb{display:inline-block;background:var(--w);border:1px solid var(--br);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:500;color:var(--p);margin-bottom:24px}.hero h1{font-size:44px;font-weight:700;color:var(--h);line-height:1.15;margin-bottom:16px}.hero p{font-size:18px;color:var(--m);line-height:1.6;margin-bottom:32px}.hc{display:inline-flex;align-items:center;gap:8px;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none;transition:background .2s}.hc:hover{background:var(--ph)}.hm{margin-top:24px;font-size:14px;color:var(--m)}.mods{max-width:var(--mw);margin:0 auto;padding:64px 24px}.mh{text-align:center;margin-bottom:48px}.mh h2{font-size:28px;font-weight:700;color:var(--h);margin-bottom:8px}.mh p{font-size:16px;color:var(--m)}.mc{display:flex;align-items:flex-start;gap:24px;background:var(--w);border:1px solid var(--br);border-radius:var(--r);padding:28px 32px;margin-bottom:16px;transition:border-color .2s,box-shadow .2s;text-decoration:none;color:inherit;cursor:pointer}.mc:hover{border-color:var(--p);box-shadow:0 4px 12px rgba(22,95,252,.08)}.mn{flex-shrink:0;width:48px;height:48px;background:var(--bl);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:var(--p)}.mx{flex:1}.mx h3{font-size:18px;font-weight:600;color:var(--h);margin-bottom:4px}.mx p{font-size:14px;color:var(--m);margin-bottom:8px}.mt{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--m);background:var(--ba);padding:4px 10px;border-radius:6px}.ma{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--p);font-size:20px;align-self:center}.ql{background:var(--bl);padding:48px 24px}.qi{max-width:var(--mw);margin:0 auto;text-align:center}.ql h2{font-size:22px;font-weight:600;color:var(--h);margin-bottom:24px}.qp{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.qpl{background:var(--w);border:1px solid var(--br);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--h);text-decoration:none;transition:border-color .2s,color .2s}.qpl:hover{border-color:var(--p);color:var(--p)}.cb{max-width:var(--mw);margin:0 auto;padding:64px 24px;text-align:center}.cx{background:var(--h);border-radius:var(--r);padding:48px 40px;color:var(--w)}.cx h2{font-size:24px;font-weight:700;margin-bottom:8px;color:var(--w)}.cx p{font-size:16px;color:#94a3b8;margin-bottom:24px}.cx a{display:inline-block;background:var(--p);color:var(--w);padding:12px 28px;border-radius:var(--rs);font-size:15px;font-weight:600;text-decoration:none}footer{border-top:1px solid var(--br);padding:32px 24px;text-align:center;font-size:13px;color:var(--m)}footer a{color:var(--p);text-decoration:none}.bc{max-width:var(--mw);margin:0 auto;padding:16px 24px;font-size:13px;color:var(--m)}.bc a{color:var(--p)}.mhr{background:var(--bl);padding:48px 24px}.mhi{max-width:var(--mw);margin:0 auto}.mhi h1{font-size:36px;font-weight:700;color:var(--h);margin-bottom:8px}.tb{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--m);margin-bottom:16px}.ll{list-style:none;padding:0}.ll li{font-size:15px;color:var(--b);padding:4px 0}.ll li::before{content:'\2713  ';color:var(--p);font-weight:700;margin-right:8px}.vp{max-width:var(--mw);margin:32px auto;padding:0 24px}.vb{background:#0f172a;border-radius:var(--r);aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--w);gap:12px}.pb{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:28px}.vh{max-width:var(--mw);margin:0 auto;padding:8px 24px 0;font-size:14px;color:var(--m);font-style:italic}.st{max-width:var(--mw);margin:0 auto;padding:48px 24px}.sp{margin-bottom:40px}.sp h3{font-size:20px;font-weight:600;color:var(--h);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bl)}.sp p,.sp ul{font-size:15px;color:var(--b);line-height:1.7;margin-bottom:12px}.sp ul{padding-left:20px}.sp li{margin-bottom:4px}.ss{background:var(--ba);border:2px dashed var(--br);border-radius:var(--rs);padding:48px 24px;text-align:center;color:var(--m);font-size:14px;margin:16px 0}.tp{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:var(--h)}.tp strong{color:var(--p)}.sp table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}.sp th{text-align:left;padding:10px 12px;background:var(--bl);color:var(--h);font-weight:600;border-bottom:2px solid var(--br)}.sp td{padding:10px 12px;border-bottom:1px solid var(--br)}.tw{max-width:var(--mw);margin:0 auto;padding:0 24px 32px}.twb{background:var(--bl);border-radius:var(--r);padding:24px 28px}.twb h3{font-size:16px;font-weight:600;color:var(--h);margin-bottom:12px}.twb ul{list-style:none;padding:0}.twb li{font-size:14px;color:var(--b);padding:4px 0}.twb li::before{content:'\2705 '}.mcta{max-width:var(--mw);margin:0 auto;padding:16px 24px 48px;text-align:center}.mcta a{display:inline-block;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none}.mnv{max-width:var(--mw);margin:0 auto;padding:0 24px 48px;display:flex;justify-content:space-between}.mnv a{font-size:14px;font-weight:500;color:var(--p);text-decoration:none;padding:10px 16px;border:1px solid var(--br);border-radius:var(--rs)}.mnv a:hover{border-color:var(--p);background:var(--bl)}.si{max-width:100%;border-radius:var(--rs);border:1px solid var(--br);margin:16px 0;display:block}.scr{background:var(--ba);border:1px solid var(--br);border-radius:var(--r);padding:28px 32px;margin:40px 0}.scr h3{font-size:18px;font-weight:600;color:var(--h);margin-bottom:16px}.scr .sc{background:var(--w);border:1px solid var(--br);border-radius:var(--rs);padding:16px 20px;margin-bottom:12px}.scr .sc h4{font-size:14px;font-weight:600;color:var(--p);margin-bottom:4px}.scr .sc p{font-size:13px;color:var(--b);margin:0;line-height:1.6}.scr .sc ul{font-size:13px;color:var(--b);margin:4px 0 0;padding-left:16px}.scr .sc li{margin-bottom:2px}.pt{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}.pt th{padding:12px 16px;background:var(--p);color:var(--w);font-weight:600;text-align:left}.pt td{padding:12px 16px;border-bottom:1px solid var(--br)}.pt tr:nth-child(even){background:var(--bl)}.pt .hi-plan{background:#e0ecff}@media(max-width:640px){.hero h1{font-size:28px}.mhi h1{font-size:24px}.mc{flex-direction:column;gap:12px;padding:20px}.ma{display:none}.mnv{flex-direction:column;gap:8px}.scr{padding:16px}}</style></head><body><nav><a href="index.html" class="nl">mimira <span>101</span></a><div class="nk"><a href="https://mimira.eu">mimira.eu</a><a href="https://app.mimira.eu" class="bn">Zaloguj się</a></div></nav>
-<div class="bc"><a href="index.html">Mimira 101</a> › Moduł 1</div>
+<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Moduł 1: Pierwsze kroki — Mimira 101</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--p:#165ffc;--ph:#0d4fd6;--bl:#f0f4f9;--ba:#f5f6f8;--w:#fff;--h:#13374f;--b:#1e293b;--m:#94a3b8;--br:#e2e8f0;--r:16px;--rs:12px;--mw:1100px;--f:'Inter',-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--f);color:var(--b);background:var(--w);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--p);text-decoration:none}
+nav{height:64px;display:flex;align-items:center;justify-content:space-between;max-width:var(--mw);margin:0 auto;padding:0 24px}
+.nl{font-size:18px;font-weight:700;color:var(--h);text-decoration:none}.nl span{color:var(--p)}
+.nk{display:flex;gap:24px;align-items:center}.nk a{font-size:14px;font-weight:500;color:var(--h);text-decoration:none}.nk a:hover{color:var(--p)}
+.bn{background:var(--p);color:var(--w)!important;padding:8px 20px;border-radius:var(--rs);font-size:13px;font-weight:600}.bn:hover{background:var(--ph)}
+.hero{background:var(--bl);padding:80px 24px 64px;text-align:center}.hi{max-width:720px;margin:0 auto}
+.hb{display:inline-block;background:var(--w);border:1px solid var(--br);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:500;color:var(--p);margin-bottom:24px}
+.hero h1{font-size:44px;font-weight:700;color:var(--h);line-height:1.15;margin-bottom:16px}
+.hero p{font-size:18px;color:var(--m);line-height:1.6;margin-bottom:32px}
+.hc{display:inline-flex;align-items:center;gap:8px;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none;transition:background .2s}.hc:hover{background:var(--ph)}
+.hm{margin-top:24px;font-size:14px;color:var(--m)}
+.mods{max-width:var(--mw);margin:0 auto;padding:64px 24px}
+.mh{text-align:center;margin-bottom:48px}.mh h2{font-size:28px;font-weight:700;color:var(--h);margin-bottom:8px}.mh p{font-size:16px;color:var(--m)}
+.mc{display:flex;align-items:flex-start;gap:24px;background:var(--w);border:1px solid var(--br);border-radius:var(--r);padding:28px 32px;margin-bottom:16px;transition:border-color .2s,box-shadow .2s;text-decoration:none;color:inherit;cursor:pointer}.mc:hover{border-color:var(--p);box-shadow:0 4px 12px rgba(22,95,252,.08)}
+.mn{flex-shrink:0;width:48px;height:48px;background:var(--bl);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:var(--p)}
+.mx{flex:1}.mx h3{font-size:18px;font-weight:600;color:var(--h);margin-bottom:4px}.mx p{font-size:14px;color:var(--m);margin-bottom:8px}
+.mt{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--m);background:var(--ba);padding:4px 10px;border-radius:6px}
+.ma{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--p);font-size:20px;align-self:center}
+.ql{background:var(--bl);padding:48px 24px}.qi{max-width:var(--mw);margin:0 auto;text-align:center}
+.ql h2{font-size:22px;font-weight:600;color:var(--h);margin-bottom:24px}
+.qp{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.qpl{background:var(--w);border:1px solid var(--br);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--h);text-decoration:none;transition:border-color .2s,color .2s}.qpl:hover{border-color:var(--p);color:var(--p)}
+.cb{max-width:var(--mw);margin:0 auto;padding:64px 24px;text-align:center}
+.cx{background:var(--h);border-radius:var(--r);padding:48px 40px;color:var(--w)}
+.cx h2{font-size:24px;font-weight:700;margin-bottom:8px;color:var(--w)}
+.cx p{font-size:16px;color:#94a3b8;margin-bottom:24px}
+.cx a{display:inline-block;background:var(--p);color:var(--w);padding:12px 28px;border-radius:var(--rs);font-size:15px;font-weight:600;text-decoration:none}
+footer{border-top:1px solid var(--br);padding:32px 24px;text-align:center;font-size:13px;color:var(--m)}footer a{color:var(--p);text-decoration:none}
+.bc{max-width:var(--mw);margin:0 auto;padding:16px 24px;font-size:13px;color:var(--m)}.bc a{color:var(--p)}
+.mhr{background:var(--bl);padding:48px 24px}.mhi{max-width:var(--mw);margin:0 auto}
+.mhi h1{font-size:36px;font-weight:700;color:var(--h);margin-bottom:8px}
+.tb{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--m);margin-bottom:16px;background:var(--w);border:1px solid var(--br);padding:4px 10px;border-radius:6px}
+.ll{list-style:none;padding:0}.ll li{font-size:15px;color:var(--b);padding:4px 0}.ll li::before{content:'\2713  ';color:var(--p);font-weight:700;margin-right:8px}
+.st{max-width:var(--mw);margin:0 auto;padding:48px 24px}
+.sp{margin-bottom:40px;scroll-margin-top:20px}
+.sp h3{font-size:22px;font-weight:600;color:var(--h);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bl)}
+.sp h4{font-size:17px;font-weight:600;color:var(--h);margin:20px 0 8px}
+.sp p,.sp ul,.sp ol{font-size:15px;color:var(--b);line-height:1.7;margin-bottom:12px}
+.sp ul,.sp ol{padding-left:20px}.sp li{margin-bottom:4px}
+.ss{background:var(--ba);border:2px dashed var(--br);border-radius:var(--rs);padding:32px 20px;text-align:center;color:var(--m);font-size:13px;margin:16px 0;font-style:italic}
+.ss strong{color:var(--h);font-style:normal;display:block;margin-bottom:4px;font-size:14px}
+.tp{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:var(--h)}.tp strong{color:var(--p)}
+.tw-warn{background:#fffbeb;border-left:4px solid #f59e0b;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#78350f}.tw-warn strong{color:#92400e}
+.tw-danger{background:#fef2f2;border-left:4px solid #ef4444;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#7f1d1d}.tw-danger strong{color:#b91c1c}
+.tw-ok{background:#ecfdf5;border-left:4px solid #10b981;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#065f46}.tw-ok strong{color:#047857}
+.tw-info{background:#f5f3ff;border-left:4px solid #8b5cf6;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#4c1d95}.tw-info strong{color:#6d28d9}
+.sp table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.sp th{text-align:left;padding:12px 14px;background:var(--bl);color:var(--h);font-weight:600;border-bottom:2px solid var(--br)}
+.sp td{padding:12px 14px;border-bottom:1px solid var(--br);vertical-align:top}
+.tw{max-width:var(--mw);margin:0 auto;padding:0 24px 32px}
+.twb{background:var(--bl);border-radius:var(--r);padding:24px 28px}
+.twb h3{font-size:16px;font-weight:600;color:var(--h);margin-bottom:12px}
+.twb ul{list-style:none;padding:0}.twb li{font-size:14px;color:var(--b);padding:4px 0}.twb li::before{content:'\2705 '}
+.mcta{max-width:var(--mw);margin:0 auto;padding:16px 24px 48px;text-align:center}
+.mcta a{display:inline-block;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none}
+.mnv{max-width:var(--mw);margin:0 auto;padding:0 24px 48px;display:flex;justify-content:space-between;gap:8px}
+.mnv a{font-size:14px;font-weight:500;color:var(--p);text-decoration:none;padding:10px 16px;border:1px solid var(--br);border-radius:var(--rs)}.mnv a:hover{border-color:var(--p);background:var(--bl)}
+.si{max-width:100%;border-radius:var(--rs);border:1px solid var(--br);margin:16px 0;display:block}
+.pt{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.pt th{padding:14px 16px;background:var(--p);color:var(--w);font-weight:600;text-align:left}
+.pt td{padding:14px 16px;border-bottom:1px solid var(--br);vertical-align:top}
+.pt tr:nth-child(even){background:var(--bl)}
+.pt .hi-plan{background:#e0ecff}
+.pt td strong{color:var(--h)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0}
+.pl{border:1px solid var(--br);border-radius:var(--r);padding:24px;background:var(--w)}
+.pl.hi-plan{border-color:var(--p);border-width:2px;position:relative}
+.pl.hi-plan::before{content:'★ Najpopularniejszy';position:absolute;top:-12px;left:20px;background:var(--p);color:var(--w);font-size:11px;padding:4px 10px;border-radius:100px;font-weight:600}
+.pl h4{font-size:18px;color:var(--h);margin-bottom:4px;font-weight:700}
+.pl .pp{font-size:24px;color:var(--p);font-weight:700;margin-bottom:12px}
+.pl p{font-size:13px;color:var(--m);margin-bottom:12px;line-height:1.5}
+.pl strong{color:var(--h);font-weight:600}
+.intro{background:#f8fafc;border:1px solid var(--br);border-radius:var(--r);padding:20px 24px;margin:0 0 24px;font-size:15px}
+.intro strong{color:var(--h)}
+.intro ul{margin-top:8px;padding-left:20px}
+.goals{background:var(--bl);border-radius:var(--r);padding:20px 24px;margin-bottom:24px}
+.goals h3{font-size:14px;color:var(--p);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;font-weight:600}
+.goals ul{list-style:none;padding:0}.goals li{padding:4px 0;font-size:15px;color:var(--b)}.goals li::before{content:'🎯 ';margin-right:6px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+@media(max-width:640px){.hero h1{font-size:28px}.mhi h1{font-size:24px}.mc{flex-direction:column;gap:12px;padding:20px}.ma{display:none}.mnv{flex-direction:column;gap:8px}.two-col{grid-template-columns:1fr}}</style></head><body><nav><a href="index.html" class="nl">mimira <span>101</span></a><div class="nk"><a href="https://mimira.eu">mimira.eu</a><a href="https://platform.mimira.eu" class="bn">Zaloguj się</a></div></nav><div class="bc"><a href="index.html">Mimira 101</a> › Moduł 1</div>
 <section class="mhr"><div class="mhi">
-<h1>Moduł 1: Profile wyszukiwania</h1>
-<div class="tb">⏱ ~3 min film + instrukcja</div>
-<p style="font-size:16px;color:var(--m);margin-bottom:16px">Ustaw profil, żeby codziennie dostawać przetargi dopasowane do Twojej firmy.</p>
-<ul class="ll">
-<li>Jak poruszać się po platformie Mimira</li>
-<li>Jak zaktualizować profil wyszukiwania przetargów</li>
-<li>Jak sprawdzić pierwsze dopasowane przetargi</li>
-</ul>
+<h1>Moduł 1: Platforma Mimira — pierwsze kroki</h1>
+<div class="tb">⏱ 3–6 minut</div>
+<p style="font-size:16px;color:var(--m);margin-bottom:16px">Załóż konto, zaloguj się do platformy Mimira i rozpocznij darmowy okres próbny.</p>
 </div></section>
-
-<section class="vp"><div class="vb"><div class="pb">▶</div><p>Film: Profile wyszukiwania · ~3 min</p></div></section><p class="vh">Wolisz czytać? Przewiń do instrukcji krok po kroku.</p>
-
 <section class="st">
-<div class="sp" id="krok-1">
-<h3>Krok 1: Zaloguj się i rozejrzyj</h3>
-<p>Po zalogowaniu zobaczysz <strong>Stronę główną</strong> z powitaniem, podsumowaniem (nowe przetargi, oczekujące oferty) i nadchodzącymi terminami.</p>
-<p>Po lewej stronie masz nawigację:</p>
-<table><tr><th>Sekcja</th><th>Co tam znajdziesz</th></tr>
-<tr><td><strong>Strona główna</strong></td><td>Dashboard z podsumowaniem</td></tr>
-<tr><td><strong>Wyszukiwarka</strong></td><td>Szukaj przetargów ręcznie</td></tr>
-<tr><td><strong>Skrzynka odbiorcza</strong></td><td>Twoje codzienne dopasowania</td></tr>
-<tr><td><strong>Twoje przetargi → Lista</strong></td><td>Przetargi, które zapisałeś</td></tr>
-<tr><td><strong>Twoje przetargi → Kalendarz</strong></td><td>Terminy na osi czasu</td></tr>
-<tr><td><strong>Profile wyszukiwania</strong></td><td>Twoje ustawienia filtrów</td></tr></table>
-<img src="img/img_008.png" alt="Widok strony głównej" style="width:100%;border-radius:12px;margin-bottom:16px"><img src="img/img_009.png" alt="Screenshot" class="si" loading="lazy">
+<div class="goals"><h3>Czego się nauczysz</h3><ul><li>Jak zarejestrować się na platformie Mimira</li>
+<li>Jak pierwszy raz zalogować się do platformy</li>
+<li>Jak skorzystać z samouczka Mimira</li>
+<li>Jak rozpocząć darmowy okres próbny</li></ul></div>
+
+<div class="sp" id="rejestracja">
+<h3>1.1 Zarejestruj się</h3>
+<p>Aby założyć konto na platformie Mimira, wejdź na <a href="https://mimira.eu/#form">mimira.eu/#form</a> i uzupełnij formularz rejestracyjny.</p>
+<img src="img/img_000.png" alt="Formularz rejestracyjny — widok ogólny" class="si" loading="lazy">
+
+<h4>1.1.1 Dane kontaktowe</h4>
+<p>Na wstępie poprosimy o uzupełnienie Twoich danych kontaktowych. Podany adres e-mail posłuży jako login do platformy i to na niego wyślemy Twoje pierwsze hasło.</p>
+<img src="img/img_001.png" alt="Sekcja: dane kontaktowe" class="si" loading="lazy">
+
+<h4>1.1.2 Dane firmy</h4>
+<p>Podany numer <strong>NIP</strong> musi być prawidłowy — na jego podstawie Mimira pobierze dane rejestrowe Twojej firmy, które wykorzystamy w przygotowywanych dokumentach ofertowych.</p>
+<p>Równie ważne jest podanie adresu strony internetowej Twojej firmy (jeśli ją posiadasz) oraz informacji o jej wielkości. Pozwoli to automatycznie pobrać informacje, na bazie których zarekomendujemy Ci pierwsze przetargi.</p>
+<img src="img/img_002.png" alt="Sekcja: dane firmy" class="si" loading="lazy">
+
+<h4>1.1.3 Twój obszar zainteresowania</h4>
+<p>Krótko opisz, jakich przetargów poszukujesz. Forma tej informacji jest dowolna — kilka zdań, lista słów kluczowych, cokolwiek co pozwoli stworzyć Twój pierwszy <a href="modul-2.html#profil-nowy">profil wyszukiwania</a>.</p>
+<img src="img/img_003.png" alt="Opis obszaru zainteresowania" class="si" loading="lazy">
+
+<h4>1.1.4 Zgoda na przetwarzanie danych</h4>
+<p>W ostatnim kroku rejestracji zaakceptuj politykę prywatności Mimira i prześlij formularz z uzupełnionymi danymi.</p>
+<img src="img/img_004.png" alt="Akceptacja polityki prywatności i wysłanie formularza" class="si" loading="lazy">
+
+<h4>1.1.5 Kolejne kroki</h4>
+<p>Po uzupełnieniu formularza — w zależności od analizy potrzeb Twojej firmy — zaprosimy Cię do rozmowy z naszym ekspertem lub od razu uzyskasz dostęp do platformy.</p>
+<div class="two-col">
+<img src="img/img_005.png" alt="Ekran potwierdzenia rejestracji" class="si" loading="lazy">
+<div class="ss"><strong>Screenshot: widok zaproszenia na rozmowę z ekspertem</strong>Alternatywny ekran, gdy zalecamy spotkanie przed uruchomieniem platformy.</div>
+</div>
 </div>
 
-<div class="sp" id="krok-2">
-<h3>Krok 2: Zaktualizuj profil wyszukiwania</h3>
-<p>Kliknij <strong>"Profile wyszukiwania"</strong> w menu po lewej, a potem <strong>"Kreator profilu"</strong>. Twój wstępny profil stworzyłiśmy już podczas rejestracji, na podstawie strony WWW i opisu usług.</p>
-<p>W zależności od wybranego pakietu, możesz utworzyć:</p>
-<ul>
-<li><strong>Monitoring</strong> — 1 profil</li>
-<li><strong>Pro</strong> — 3 profile</li>
-<li><strong>Power User</strong> — 5 profili</li>
-</ul>
-<p>Kreator prowadzi Cię przez 3 kroki:</p>
+<div class="sp" id="logowanie">
+<h3>1.2 Pierwsze logowanie do Mimiry</h3>
 
-<h3 style="border:none;padding:0;margin-top:24px">Krok 1 z 3: Nazwa profilu i usługi</h3>
-<ul>
-<li>Wpisz nazwę profilu (np. "Budownictwo Dolnośląskie")</li>
-<li>Opisz usługi — wpisz słowo kluczowe (np. "dostawa płyt chodnikowych"), system sam dopasuje kategorie</li>
-<li>Dodaj dodatkowe słowa kluczowe opisujące Twoją działalność</li>
-<li>Im dokładniej opiszesz usługi, tym trafniejsze będą dopasowania</li>
-</ul>
-<img src="img/img_010.png" alt="Screenshot" class="si" loading="lazy">
+<h4>1.2.1 Dane do logowania</h4>
+<p>Po udanej rejestracji (lub rozmowie z ekspertem Mimira) prześlemy na Twój adres mailowy dane do logowania. Jeśli nie znajdziesz ich w skrzynce, sprawdź folder <em>spam</em>. Jeśli tam również ich nie ma, napisz do nas: <a href="mailto:info@mimira.eu">info@mimira.eu</a>.</p>
+<img src="img/img_006.png" alt="E-mail z danymi dostępowymi" class="si" loading="lazy">
 
-<h3 style="border:none;padding:0;margin-top:24px">Krok 2 z 3: Lokalizacja</h3>
-<ul>
-<li>Wybierz województwa, w których chcesz startować w przetargach</li>
-<li>Możesz wybrać jedno, kilka, albo całą Polskę</li>
-</ul>
-<img src="img/img_011.png" alt="Screenshot" class="si" loading="lazy">
+<h4>1.2.2 Pierwsze logowanie</h4>
+<p>Wejdź na <a href="https://platform.mimira.eu">platform.mimira.eu</a> i wpisz swój adres e-mail oraz hasło, które przesłaliśmy w wiadomości mailowej. Następnie poprosimy Cię o nadanie nowego hasła, z wykorzystaniem którego zalogujesz się na platformę.</p>
+<img src="img/img_007.png" alt="Ekran logowania platform.mimira.eu" class="si" loading="lazy">
 
-<h3 style="border:none;padding:0;margin-top:24px">Krok 3 z 3: Dedykowane kryteria analizy</h3>
-<p>Ten etap jest opcjonalny (dostępny w planie Pro i Power User). Kryteria dodatkowe pozwalają wyciągnąć z SWZ informacje kluczowe dla Twojej branży.</p>
-<ul>
-<li>W sekcji "Kryteria do oceny AI" kliknij "Dodaj kryterium"</li>
-<li>Wpisz pełnym zdaniem pytanie, na które chcesz zobaczyć odpowiedź dla każdego przetargu</li>
-<li>Dodaj kolejne pytania — ale nie za dużo, żeby podgląd pozostał czytelny</li>
-</ul>
-<img src="img/img_012.png" alt="Screenshot" class="si" loading="lazy">
+<h4>1.2.3 Ankieta powitalna</h4>
+<p>Celem dopasowania wsparcia Mimira do Twoich potrzeb, poprosimy Cię o udzielenie kilku podstawowych informacji:</p>
 
-<p>Kliknij <strong>"Zapisz"</strong>. Gotowe! Algorytm zacznie przeszukiwać ponad 10 000 źródeł: BZP, TED, e-Zamówienia, Bazę Konkurencyjności i inne.</p>
+<p><strong>1.2.3.1 Jakie są Twoje cele w korzystaniu z Mimiry</strong> — które elementy platformy będą stanowić największe wsparcie.</p>
+<div class="ss"><strong>Screenshot: Ankieta powitalna — pytanie o cele</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p><strong>1.2.3.2 Jaka jest Twoja rola w firmie</strong> — dopasujemy do tego Twoje doświadczenie z Mimirą.</p>
+<div class="ss"><strong>Screenshot: Ankieta powitalna — pytanie o rolę w firmie</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p><strong>1.2.3.3 Czy macie już doświadczenie z zamówieniami publicznymi</strong> — czy to nowy temat, a może już istotny element Waszych przychodów.</p>
+<div class="ss"><strong>Screenshot: Ankieta powitalna — doświadczenie z przetargami</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p><strong>1.2.3.4 Jakiego rodzaju produkty i usługi oferujecie</strong> — zweryfikuj propozycję, która powstała na bazie Waszej strony internetowej oraz obszaru zainteresowania podanego w formularzu.</p>
+<ul>
+<li>edytuj klikając w ikonę ołówka (po lewej)</li>
+<li>usuń klikając w czerwoną ikonę śmietnika (po prawej)</li>
+</ul>
+<div class="ss"><strong>Screenshot: Ankieta powitalna — lista produktów/usług z propozycjami</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p><strong>1.2.3.5 W których regionach działacie</strong> — cała Polska, czy tylko wybrane województwa?</p>
+<div class="ss"><strong>Screenshot: Ankieta powitalna — wybór województw</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p><strong>1.2.3.6 Twój zespół</strong> — wskaż kto jeszcze w Waszym zespole powinien uzyskać dostęp do Mimiry.</p>
+<div class="ss"><strong>Screenshot: Ankieta powitalna — dodawanie członków zespołu</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
 </div>
 
-<div class="tp"><strong>💡 Tip:</strong> Możesz mieć kilka profili (np. budownictwo + IT). Każdy działa niezależnie z własnym zakresem geograficznym.</div>
+<div class="sp" id="samouczek">
+<h3>1.3 Samouczek Mimira</h3>
+<p>Po pierwszym logowaniu do Mimiry automatycznie uruchomi się samouczek, który przejdzie razem z Tobą przez najważniejsze funkcje platformy. Opisujemy je również szerzej w kolejnych modułach tej instrukcji.</p>
+<div class="ss"><strong>Screenshot: Samouczek — pierwsze kroki po zalogowaniu</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<div class="tp"><strong>💡 Tip:</strong> Samouczek możesz uruchomić ponownie w dowolnym momencie, wciskając przycisk w prawym górnym rogu ekranu.</div>
+<div class="ss"><strong>Screenshot: Przycisk uruchomienia samouczka</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+</div>
+
+<div class="sp" id="okres-probny">
+<h3>1.4 Rozpoczęcie okresu próbnego</h3>
+<div class="tw-ok"><strong>💡 Jeżeli zaprosiliśmy Cię do rozmowy z ekspertem:</strong> okres próbny rozpoczynasz według ustaleń podjętych z nim — ten krok Cię nie dotyczy.</div>
+
+<p><strong>7-dniowy bezpłatny okres próbny w Mimirze obejmuje:</strong></p>
+<ul>
+<li>codzienne raporty z przetargami dopasowanymi do profilu Twojej firmy</li>
+<li>nielimitowaną możliwość tworzenia profili wyszukiwań</li>
+<li>nielimitowaną możliwość generowania analiz przetargów na bazie Twoich kryteriów i konsultacji z Asystentem AI</li>
+<li>nielimitowaną możliwość generowania wycen wartości danego przetargu</li>
+<li>możliwość wygenerowania 1 gotowego zestawu dokumentów ofertowych</li>
+<li>możliwość zaproszenia nielimitowanej liczby innych członków zespołu</li>
+<li>możliwość zarządzania udziałem w wielu postępowaniach przez członków Twojego zespołu</li>
+</ul>
+
+<p><strong>Aby rozpocząć okres próbny, wybierz jedną z 2 opcji:</strong></p>
+<ol>
+<li><strong>Podpięcie metody płatności</strong> — okres próbny rozpocznie się natychmiast.</li>
+<li><strong>Umówienie rozmowy z ekspertem Mimira</strong> — okres próbny rozpocznie się dopiero po tym spotkaniu.</li>
+</ol>
+<p>Obie opcje pozwalają nam zweryfikować, że po drugiej stronie jest partner, który realnie rozważa współpracę korzystną dla obu stron.</p>
+<div class="ss"><strong>Screenshot: Wybór sposobu rozpoczęcia okresu próbnego</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p>W przypadku wybrania opcji z kartą — przez pierwszy tydzień korzystania z Mimiry nie zostanie pobrana żadna opłata. Tylko w przypadku, gdy pozostaniesz z nami na dłużej, karta zostanie obciążona kwotą za najniższy pakiet miesięczny Mimira.</p>
+<p>Subskrypcję możesz anulować w dowolnym momencie okresu próbnego, a Twoje konto na Mimirze pozostanie aktywne do końca testowego tygodnia.</p>
+<p>W trakcie okresu próbnego możesz się również spodziewać kontaktu z naszej strony — sprawdzimy, czy dobrze korzysta Ci się z platformy i ustalimy, który pakiet wsparcia najlepiej odpowiada na potrzeby Twojej firmy.</p>
+<div class="ss"><strong>Screenshot: Panel Stripe — podpięcie karty płatniczej</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p>To tyle! Udało Ci się rozpocząć okres próbny i możesz zacząć wygrywanie przetargów publicznych razem z Mimirą 🙂</p>
+</div>
+
+<div class="twb tw" style="max-width:var(--mw);margin:0 auto 24px"><h3>Podsumowanie</h3><ul>
+<li>Rejestracja zajmuje 2-3 minuty — formularz → dane firmy → obszar zainteresowania → zgoda</li>
+<li>Logowanie: platform.mimira.eu (uwaga — nowa domena)</li>
+<li>Ankieta powitalna (6 pytań) dopasowuje Mimirę do Twojej firmy</li>
+<li>Trial trwa 7 dni — bez zobowiązań, anulujesz w każdym momencie</li>
+</ul></div>
 </section>
-
-<div class="scr"><h3>📹 Skrypt screencastu: Profile wyszukiwania (~3 min)</h3><div class="sc"><h4>Scena 1 (0:00-0:20): Intro</h4><p>Cześć, pokażę Ci jak ustawić profil wyszukiwania przetargów.</p><ul><li>Powitanie</li><li>Cel: dopasowane przetargi codziennie</li></ul></div><div class="sc"><h4>Scena 2 (0:20-1:00): Nawigacja po platformie</h4><p>Pokaż menu po lewej stronie.</p><ul><li>Strona główna — dashboard</li><li>Skrzynka odbiorcza — dopasowania</li><li>Profile wyszukiwania — ustawienia</li></ul></div><div class="sc"><h4>Scena 3 (1:00-1:40): Kreator profilu</h4><p>Pokaż kreator krok po kroku.</p><ul><li>Nazwa profilu</li><li>Opis usług i słowa kluczowe</li><li>Wybór województw</li></ul></div><div class="sc"><h4>Scena 4 (1:40-2:20): Kryteria AI</h4><p>Pokaż opcjonalne kryteria dodatkowe.</p><ul><li>Dodaj kryterium</li><li>Wpisz pytanie pełnym zdaniem</li><li>Pokaż jak odpowiedź pojawia się przy przetargu</li></ul></div><div class="sc"><h4>Scena 5 (2:20-3:00): Podsumowanie</h4><p></p><ul><li>Podsumuj 3 kroki kreatora</li><li>Zachęć do przejścia do Modułu 2</li><li>Pokaż że algorytm zaczyna działać od razu</li></ul></div></div>
-
-<section class="tw"><div class="twb"><h3>Podsumowanie</h3><ul>
-<li>Profil wyszukiwania to fundament Mimiry</li>
-<li>Szerokie kryteria na start = więcej wyników do nauki algorytmu</li>
-<li>Możesz mieć wiele profili jednocześnie</li>
-</ul></div></section>
-
-<div class="mcta"><a href="https://app.mimira.eu">Spróbuj utworzyć profil w swoim koncie →</a></div>
-<div class="mnv"><a href="modul-0.html">← Moduł 0: Pierwsze kroki</a><a href="modul-2.html">Moduł 2: Skrzynka odbiorcza →</a></div>
+<div class="mcta"><a href="https://mimira.eu/#form">Załóż konto na Mimirze →</a></div>
+<div class="mnv"><a href="index.html">← Strona główna</a><a href="modul-2.html">Moduł 2: Profile wyszukiwania →</a></div>
 <footer><p>Mimira © 2026 · <a href="https://mimira.eu">mimira.eu</a> · <a href="mailto:info@mimira.eu">info@mimira.eu</a></p></footer></body></html>

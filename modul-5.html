@@ -1,91 +1,238 @@
-<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Moduł 5: Dashboard i zarządzanie — Mimira 101</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--p:#165ffc;--ph:#0d4fd6;--bl:#f0f4f9;--ba:#f5f6f8;--w:#fff;--h:#13374f;--b:#1e293b;--m:#94a3b8;--br:#e2e8f0;--r:16px;--rs:12px;--mw:1100px;--f:'Inter',-apple-system,sans-serif}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--f);color:var(--b);background:var(--w);line-height:1.6;-webkit-font-smoothing:antialiased}a{color:var(--p);text-decoration:none}nav{height:64px;display:flex;align-items:center;justify-content:space-between;max-width:var(--mw);margin:0 auto;padding:0 24px}.nl{font-size:18px;font-weight:700;color:var(--h);text-decoration:none}.nl span{color:var(--p)}.nk{display:flex;gap:24px;align-items:center}.nk a{font-size:14px;font-weight:500;color:var(--h);text-decoration:none}.nk a:hover{color:var(--p)}.bn{background:var(--p);color:var(--w)!important;padding:8px 20px;border-radius:var(--rs);font-size:13px;font-weight:600}.bn:hover{background:var(--ph)}.hero{background:var(--bl);padding:80px 24px 64px;text-align:center}.hi{max-width:720px;margin:0 auto}.hb{display:inline-block;background:var(--w);border:1px solid var(--br);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:500;color:var(--p);margin-bottom:24px}.hero h1{font-size:44px;font-weight:700;color:var(--h);line-height:1.15;margin-bottom:16px}.hero p{font-size:18px;color:var(--m);line-height:1.6;margin-bottom:32px}.hc{display:inline-flex;align-items:center;gap:8px;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none;transition:background .2s}.hc:hover{background:var(--ph)}.hm{margin-top:24px;font-size:14px;color:var(--m)}.mods{max-width:var(--mw);margin:0 auto;padding:64px 24px}.mh{text-align:center;margin-bottom:48px}.mh h2{font-size:28px;font-weight:700;color:var(--h);margin-bottom:8px}.mh p{font-size:16px;color:var(--m)}.mc{display:flex;align-items:flex-start;gap:24px;background:var(--w);border:1px solid var(--br);border-radius:var(--r);padding:28px 32px;margin-bottom:16px;transition:border-color .2s,box-shadow .2s;text-decoration:none;color:inherit;cursor:pointer}.mc:hover{border-color:var(--p);box-shadow:0 4px 12px rgba(22,95,252,.08)}.mn{flex-shrink:0;width:48px;height:48px;background:var(--bl);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:var(--p)}.mx{flex:1}.mx h3{font-size:18px;font-weight:600;color:var(--h);margin-bottom:4px}.mx p{font-size:14px;color:var(--m);margin-bottom:8px}.mt{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--m);background:var(--ba);padding:4px 10px;border-radius:6px}.ma{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--p);font-size:20px;align-self:center}.ql{background:var(--bl);padding:48px 24px}.qi{max-width:var(--mw);margin:0 auto;text-align:center}.ql h2{font-size:22px;font-weight:600;color:var(--h);margin-bottom:24px}.qp{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}.qpl{background:var(--w);border:1px solid var(--br);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--h);text-decoration:none;transition:border-color .2s,color .2s}.qpl:hover{border-color:var(--p);color:var(--p)}.cb{max-width:var(--mw);margin:0 auto;padding:64px 24px;text-align:center}.cx{background:var(--h);border-radius:var(--r);padding:48px 40px;color:var(--w)}.cx h2{font-size:24px;font-weight:700;margin-bottom:8px;color:var(--w)}.cx p{font-size:16px;color:#94a3b8;margin-bottom:24px}.cx a{display:inline-block;background:var(--p);color:var(--w);padding:12px 28px;border-radius:var(--rs);font-size:15px;font-weight:600;text-decoration:none}footer{border-top:1px solid var(--br);padding:32px 24px;text-align:center;font-size:13px;color:var(--m)}footer a{color:var(--p);text-decoration:none}.bc{max-width:var(--mw);margin:0 auto;padding:16px 24px;font-size:13px;color:var(--m)}.bc a{color:var(--p)}.mhr{background:var(--bl);padding:48px 24px}.mhi{max-width:var(--mw);margin:0 auto}.mhi h1{font-size:36px;font-weight:700;color:var(--h);margin-bottom:8px}.tb{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--m);margin-bottom:16px}.ll{list-style:none;padding:0}.ll li{font-size:15px;color:var(--b);padding:4px 0}.ll li::before{content:'\2713  ';color:var(--p);font-weight:700;margin-right:8px}.vp{max-width:var(--mw);margin:32px auto;padding:0 24px}.vb{background:#0f172a;border-radius:var(--r);aspect-ratio:16/9;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--w);gap:12px}.pb{width:72px;height:72px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:28px}.vh{max-width:var(--mw);margin:0 auto;padding:8px 24px 0;font-size:14px;color:var(--m);font-style:italic}.st{max-width:var(--mw);margin:0 auto;padding:48px 24px}.sp{margin-bottom:40px}.sp h3{font-size:20px;font-weight:600;color:var(--h);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bl)}.sp p,.sp ul{font-size:15px;color:var(--b);line-height:1.7;margin-bottom:12px}.sp ul{padding-left:20px}.sp li{margin-bottom:4px}.ss{background:var(--ba);border:2px dashed var(--br);border-radius:var(--rs);padding:48px 24px;text-align:center;color:var(--m);font-size:14px;margin:16px 0}.tp{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:var(--h)}.tp strong{color:var(--p)}.sp table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}.sp th{text-align:left;padding:10px 12px;background:var(--bl);color:var(--h);font-weight:600;border-bottom:2px solid var(--br)}.sp td{padding:10px 12px;border-bottom:1px solid var(--br)}.tw{max-width:var(--mw);margin:0 auto;padding:0 24px 32px}.twb{background:var(--bl);border-radius:var(--r);padding:24px 28px}.twb h3{font-size:16px;font-weight:600;color:var(--h);margin-bottom:12px}.twb ul{list-style:none;padding:0}.twb li{font-size:14px;color:var(--b);padding:4px 0}.twb li::before{content:'\2705 '}.mcta{max-width:var(--mw);margin:0 auto;padding:16px 24px 48px;text-align:center}.mcta a{display:inline-block;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none}.mnv{max-width:var(--mw);margin:0 auto;padding:0 24px 48px;display:flex;justify-content:space-between}.mnv a{font-size:14px;font-weight:500;color:var(--p);text-decoration:none;padding:10px 16px;border:1px solid var(--br);border-radius:var(--rs)}.mnv a:hover{border-color:var(--p);background:var(--bl)}.si{max-width:100%;border-radius:var(--rs);border:1px solid var(--br);margin:16px 0;display:block}.scr{background:var(--ba);border:1px solid var(--br);border-radius:var(--r);padding:28px 32px;margin:40px 0}.scr h3{font-size:18px;font-weight:600;color:var(--h);margin-bottom:16px}.scr .sc{background:var(--w);border:1px solid var(--br);border-radius:var(--rs);padding:16px 20px;margin-bottom:12px}.scr .sc h4{font-size:14px;font-weight:600;color:var(--p);margin-bottom:4px}.scr .sc p{font-size:13px;color:var(--b);margin:0;line-height:1.6}.scr .sc ul{font-size:13px;color:var(--b);margin:4px 0 0;padding-left:16px}.scr .sc li{margin-bottom:2px}.pt{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}.pt th{padding:12px 16px;background:var(--p);color:var(--w);font-weight:600;text-align:left}.pt td{padding:12px 16px;border-bottom:1px solid var(--br)}.pt tr:nth-child(even){background:var(--bl)}.pt .hi-plan{background:#e0ecff}@media(max-width:640px){.hero h1{font-size:28px}.mhi h1{font-size:24px}.mc{flex-direction:column;gap:12px;padding:20px}.ma{display:none}.mnv{flex-direction:column;gap:8px}.scr{padding:16px}}</style></head><body><nav><a href="index.html" class="nl">mimira <span>101</span></a><div class="nk"><a href="https://mimira.eu">mimira.eu</a><a href="https://app.mimira.eu" class="bn">Zaloguj się</a></div></nav>
-<div class="bc"><a href="index.html">Mimira 101</a> › Moduł 5</div>
+<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Moduł 5: Zarządzanie pracą — Mimira 101</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{--p:#165ffc;--ph:#0d4fd6;--bl:#f0f4f9;--ba:#f5f6f8;--w:#fff;--h:#13374f;--b:#1e293b;--m:#94a3b8;--br:#e2e8f0;--r:16px;--rs:12px;--mw:1100px;--f:'Inter',-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--f);color:var(--b);background:var(--w);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--p);text-decoration:none}
+nav{height:64px;display:flex;align-items:center;justify-content:space-between;max-width:var(--mw);margin:0 auto;padding:0 24px}
+.nl{font-size:18px;font-weight:700;color:var(--h);text-decoration:none}.nl span{color:var(--p)}
+.nk{display:flex;gap:24px;align-items:center}.nk a{font-size:14px;font-weight:500;color:var(--h);text-decoration:none}.nk a:hover{color:var(--p)}
+.bn{background:var(--p);color:var(--w)!important;padding:8px 20px;border-radius:var(--rs);font-size:13px;font-weight:600}.bn:hover{background:var(--ph)}
+.hero{background:var(--bl);padding:80px 24px 64px;text-align:center}.hi{max-width:720px;margin:0 auto}
+.hb{display:inline-block;background:var(--w);border:1px solid var(--br);border-radius:100px;padding:6px 16px;font-size:13px;font-weight:500;color:var(--p);margin-bottom:24px}
+.hero h1{font-size:44px;font-weight:700;color:var(--h);line-height:1.15;margin-bottom:16px}
+.hero p{font-size:18px;color:var(--m);line-height:1.6;margin-bottom:32px}
+.hc{display:inline-flex;align-items:center;gap:8px;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none;transition:background .2s}.hc:hover{background:var(--ph)}
+.hm{margin-top:24px;font-size:14px;color:var(--m)}
+.mods{max-width:var(--mw);margin:0 auto;padding:64px 24px}
+.mh{text-align:center;margin-bottom:48px}.mh h2{font-size:28px;font-weight:700;color:var(--h);margin-bottom:8px}.mh p{font-size:16px;color:var(--m)}
+.mc{display:flex;align-items:flex-start;gap:24px;background:var(--w);border:1px solid var(--br);border-radius:var(--r);padding:28px 32px;margin-bottom:16px;transition:border-color .2s,box-shadow .2s;text-decoration:none;color:inherit;cursor:pointer}.mc:hover{border-color:var(--p);box-shadow:0 4px 12px rgba(22,95,252,.08)}
+.mn{flex-shrink:0;width:48px;height:48px;background:var(--bl);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:700;color:var(--p)}
+.mx{flex:1}.mx h3{font-size:18px;font-weight:600;color:var(--h);margin-bottom:4px}.mx p{font-size:14px;color:var(--m);margin-bottom:8px}
+.mt{display:inline-flex;align-items:center;gap:4px;font-size:13px;color:var(--m);background:var(--ba);padding:4px 10px;border-radius:6px}
+.ma{flex-shrink:0;width:40px;height:40px;display:flex;align-items:center;justify-content:center;color:var(--p);font-size:20px;align-self:center}
+.ql{background:var(--bl);padding:48px 24px}.qi{max-width:var(--mw);margin:0 auto;text-align:center}
+.ql h2{font-size:22px;font-weight:600;color:var(--h);margin-bottom:24px}
+.qp{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.qpl{background:var(--w);border:1px solid var(--br);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--h);text-decoration:none;transition:border-color .2s,color .2s}.qpl:hover{border-color:var(--p);color:var(--p)}
+.cb{max-width:var(--mw);margin:0 auto;padding:64px 24px;text-align:center}
+.cx{background:var(--h);border-radius:var(--r);padding:48px 40px;color:var(--w)}
+.cx h2{font-size:24px;font-weight:700;margin-bottom:8px;color:var(--w)}
+.cx p{font-size:16px;color:#94a3b8;margin-bottom:24px}
+.cx a{display:inline-block;background:var(--p);color:var(--w);padding:12px 28px;border-radius:var(--rs);font-size:15px;font-weight:600;text-decoration:none}
+footer{border-top:1px solid var(--br);padding:32px 24px;text-align:center;font-size:13px;color:var(--m)}footer a{color:var(--p);text-decoration:none}
+.bc{max-width:var(--mw);margin:0 auto;padding:16px 24px;font-size:13px;color:var(--m)}.bc a{color:var(--p)}
+.mhr{background:var(--bl);padding:48px 24px}.mhi{max-width:var(--mw);margin:0 auto}
+.mhi h1{font-size:36px;font-weight:700;color:var(--h);margin-bottom:8px}
+.tb{display:inline-flex;align-items:center;gap:6px;font-size:14px;color:var(--m);margin-bottom:16px;background:var(--w);border:1px solid var(--br);padding:4px 10px;border-radius:6px}
+.ll{list-style:none;padding:0}.ll li{font-size:15px;color:var(--b);padding:4px 0}.ll li::before{content:'\2713  ';color:var(--p);font-weight:700;margin-right:8px}
+.st{max-width:var(--mw);margin:0 auto;padding:48px 24px}
+.sp{margin-bottom:40px;scroll-margin-top:20px}
+.sp h3{font-size:22px;font-weight:600;color:var(--h);margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bl)}
+.sp h4{font-size:17px;font-weight:600;color:var(--h);margin:20px 0 8px}
+.sp p,.sp ul,.sp ol{font-size:15px;color:var(--b);line-height:1.7;margin-bottom:12px}
+.sp ul,.sp ol{padding-left:20px}.sp li{margin-bottom:4px}
+.ss{background:var(--ba);border:2px dashed var(--br);border-radius:var(--rs);padding:32px 20px;text-align:center;color:var(--m);font-size:13px;margin:16px 0;font-style:italic}
+.ss strong{color:var(--h);font-style:normal;display:block;margin-bottom:4px;font-size:14px}
+.tp{background:#eff6ff;border-left:4px solid var(--p);border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:var(--h)}.tp strong{color:var(--p)}
+.tw-warn{background:#fffbeb;border-left:4px solid #f59e0b;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#78350f}.tw-warn strong{color:#92400e}
+.tw-danger{background:#fef2f2;border-left:4px solid #ef4444;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#7f1d1d}.tw-danger strong{color:#b91c1c}
+.tw-ok{background:#ecfdf5;border-left:4px solid #10b981;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#065f46}.tw-ok strong{color:#047857}
+.tw-info{background:#f5f3ff;border-left:4px solid #8b5cf6;border-radius:0 var(--rs) var(--rs) 0;padding:16px 20px;margin:16px 0;font-size:14px;color:#4c1d95}.tw-info strong{color:#6d28d9}
+.sp table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.sp th{text-align:left;padding:12px 14px;background:var(--bl);color:var(--h);font-weight:600;border-bottom:2px solid var(--br)}
+.sp td{padding:12px 14px;border-bottom:1px solid var(--br);vertical-align:top}
+.tw{max-width:var(--mw);margin:0 auto;padding:0 24px 32px}
+.twb{background:var(--bl);border-radius:var(--r);padding:24px 28px}
+.twb h3{font-size:16px;font-weight:600;color:var(--h);margin-bottom:12px}
+.twb ul{list-style:none;padding:0}.twb li{font-size:14px;color:var(--b);padding:4px 0}.twb li::before{content:'\2705 '}
+.mcta{max-width:var(--mw);margin:0 auto;padding:16px 24px 48px;text-align:center}
+.mcta a{display:inline-block;background:var(--p);color:var(--w);padding:14px 32px;border-radius:var(--r);font-size:16px;font-weight:600;text-decoration:none}
+.mnv{max-width:var(--mw);margin:0 auto;padding:0 24px 48px;display:flex;justify-content:space-between;gap:8px}
+.mnv a{font-size:14px;font-weight:500;color:var(--p);text-decoration:none;padding:10px 16px;border:1px solid var(--br);border-radius:var(--rs)}.mnv a:hover{border-color:var(--p);background:var(--bl)}
+.si{max-width:100%;border-radius:var(--rs);border:1px solid var(--br);margin:16px 0;display:block}
+.pt{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+.pt th{padding:14px 16px;background:var(--p);color:var(--w);font-weight:600;text-align:left}
+.pt td{padding:14px 16px;border-bottom:1px solid var(--br);vertical-align:top}
+.pt tr:nth-child(even){background:var(--bl)}
+.pt .hi-plan{background:#e0ecff}
+.pt td strong{color:var(--h)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:24px 0}
+.pl{border:1px solid var(--br);border-radius:var(--r);padding:24px;background:var(--w)}
+.pl.hi-plan{border-color:var(--p);border-width:2px;position:relative}
+.pl.hi-plan::before{content:'★ Najpopularniejszy';position:absolute;top:-12px;left:20px;background:var(--p);color:var(--w);font-size:11px;padding:4px 10px;border-radius:100px;font-weight:600}
+.pl h4{font-size:18px;color:var(--h);margin-bottom:4px;font-weight:700}
+.pl .pp{font-size:24px;color:var(--p);font-weight:700;margin-bottom:12px}
+.pl p{font-size:13px;color:var(--m);margin-bottom:12px;line-height:1.5}
+.pl strong{color:var(--h);font-weight:600}
+.intro{background:#f8fafc;border:1px solid var(--br);border-radius:var(--r);padding:20px 24px;margin:0 0 24px;font-size:15px}
+.intro strong{color:var(--h)}
+.intro ul{margin-top:8px;padding-left:20px}
+.goals{background:var(--bl);border-radius:var(--r);padding:20px 24px;margin-bottom:24px}
+.goals h3{font-size:14px;color:var(--p);text-transform:uppercase;letter-spacing:.5px;margin-bottom:10px;font-weight:600}
+.goals ul{list-style:none;padding:0}.goals li{padding:4px 0;font-size:15px;color:var(--b)}.goals li::before{content:'🎯 ';margin-right:6px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0}
+@media(max-width:640px){.hero h1{font-size:28px}.mhi h1{font-size:24px}.mc{flex-direction:column;gap:12px;padding:20px}.ma{display:none}.mnv{flex-direction:column;gap:8px}.two-col{grid-template-columns:1fr}}</style></head><body><nav><a href="index.html" class="nl">mimira <span>101</span></a><div class="nk"><a href="https://mimira.eu">mimira.eu</a><a href="https://platform.mimira.eu" class="bn">Zaloguj się</a></div></nav><div class="bc"><a href="index.html">Mimira 101</a> › Moduł 5</div>
 <section class="mhr"><div class="mhi">
-<h1>Moduł 5: Dashboard i zarządzanie</h1>
-<div class="tb">⏱ ~2 min film + instrukcja</div>
-<p style="font-size:16px;color:var(--m);margin-bottom:16px">Śledź wyniki i zarządzaj przetargami jak pipeline sprzedażowy.</p>
-<ul class="ll">
-<li>Jak czytać dashboard</li>
-<li>Jak zarządzać statusami przetargów</li>
-<li>Jak dodać użytkowników do konta</li>
-</ul>
+<h1>Moduł 5: Zarządzanie pracą na platformie</h1>
+<div class="tb">⏱ 2–4 minuty</div>
+<p style="font-size:16px;color:var(--m);margin-bottom:16px">Dashboard, lista przetargów, kalendarz terminów i ustawienia zespołu — wszystko czym codziennie zarządzasz.</p>
 </div></section>
-
-<section class="vp"><div class="vb"><div class="pb">▶</div><p>Film: Dashboard i zarządzanie · ~2 min</p></div></section><p class="vh">Wolisz czytać? Przewiń do instrukcji krok po kroku.</p>
-
 <section class="st">
-<div class="sp" id="krok-1">
-<h3>Krok 1: Dashboard (Strona główna)</h3>
-<p>Strona główna pokazuje podsumowanie:</p>
+<div class="goals"><h3>Czego się nauczysz</h3><ul><li>Jak korzystać ze strony głównej (Dashboard)</li>
+<li>Jak poruszać się po Mimirze używając panelu bocznego</li>
+<li>Jak zarządzać swoimi przetargami z poziomu listy i kalendarza</li>
+<li>Jak określić ustawienia ogólne i dot. Twojego zespołu</li></ul></div>
+
+<div class="sp" id="dashboard">
+<h3>5.1 Dashboard (Strona główna)</h3>
+<p>Strona główna to pierwszy ekran widoczny dla Ciebie po zalogowaniu. Znajdziesz na nim podsumowanie najważniejszych informacji dot. Twojego udziału w przetargach publicznych:</p>
 <ul>
-<li>Ile nowych przetargów pojawiło się w tym tygodniu</li>
-<li>Ile masz oczekujących ofert</li>
-<li>Nadchodzące terminy</li>
+<li>Ile nowych przetargów rekomendowaliśmy Ci w ostatnim tygodniu</li>
+<li>W ilu przetargach termin składania ofert upływa w ciągu kolejnych 7 dni</li>
+<li>Jakie są najbliższe terminy składania ofert (wraz z możliwością ich sprawdzenia w kalendarzu)</li>
+<li>Jakie przetargi ostatnio rekomendowaliśmy (wraz z możliwością ich sprawdzenia w skrzynce odbiorczej)</li>
+<li>Statystyki Waszego udziału w przetargach publicznych:
+    <ul>
+    <li>w ilu postępowaniach Mimira rekomendowała udział</li>
+    <li>w ilu postępowaniach zdecydowaliście się wystartować</li>
+    <li>w ilu postępowaniach Mimira przygotowała dla Was ofertę</li>
+    <li>w ilu postępowaniach złożyliście oferty</li>
+    <li>w ilu postępowaniach wygraliście zamówienie publiczne</li>
+    </ul>
+</li>
 </ul>
-<img src="img/img_040.png" alt="Screenshot" class="si" loading="lazy">
+<img src="img/img_040.png" alt="Dashboard — widok strony głównej" class="si" loading="lazy">
 </div>
 
-<div class="sp" id="krok-2">
-<h3>Krok 2: Lista i statusy</h3>
-<p>Kliknij <strong>"Twoje przetargi → Lista"</strong>. Widzisz wszystkie zapisane przetargi.</p>
-<img src="img/img_041.png" alt="Screenshot" class="si" loading="lazy">
-<p>Każdy przetarg ma status, który możesz zmieniać:</p>
-<img src="img/img_042.png" alt="Screenshot" class="si" loading="lazy">
-<img src="img/img_043.png" alt="Screenshot" class="si" loading="lazy">
-
-<table><tr><th>Status</th><th>Znaczenie</th></tr>
-<tr><td><strong>Samodzielny udział</strong></td><td>Dodano bez generowania oferty</td></tr>
-<tr><td><strong>Przygotowanie dokumentów</strong></td><td>Pracujemy nad Twoimi dokumentami</td></tr>
-<tr><td><strong>Dokumenty przygotowane</strong></td><td>Gotowe — czekają na Twoje akcje</td></tr>
-<tr><td><strong>Złożono ofertę</strong></td><td>Oznaczasz po złożeniu oferty</td></tr>
-<tr><td><strong>Wygrana / Przegrana</strong></td><td>Wynik postępowania</td></tr>
-<tr><td><strong>Anulowane</strong></td><td>Postępowanie anulowane przez zamawiającego</td></tr>
-<tr><td><strong>Odrzucono</strong></td><td>Odrzucone przez Ciebie przetargi</td></tr>
+<div class="sp" id="panel-boczny">
+<h3>5.2 Panel boczny</h3>
+<p>Po lewej stronie platformy znajdziesz panel boczny ułatwiający nawigację pomiędzy sekcjami:</p>
+<table>
+<tr><th>Sekcja</th><th>Co tam znajdziesz</th></tr>
+<tr><td><strong>Strona główna</strong></td><td>Dashboard z podsumowaniem najważniejszych informacji</td></tr>
+<tr><td><strong>Wyszukiwarka przetargów</strong></td><td>Dostęp do pełnej bazy przetargów zebranej przez Mimirę, którą możesz przeszukać z wykorzystaniem filtrów i słów kluczowych</td></tr>
+<tr><td><strong>Skrzynka odbiorcza</strong></td><td>Przetargi dopasowane do Twojego profilu wyszukiwania</td></tr>
+<tr><td><strong>Twoje przetargi → Lista</strong></td><td>Przetargi, do których podjęliście decyzję o udziale (z pomocą Mimiry lub samodzielnie)</td></tr>
+<tr><td><strong>Twoje przetargi → Kalendarz</strong></td><td>Przystępne zestawienie terminów składania ofert i zadawania pytań do postępowań rekomendowanych przez Mimirę</td></tr>
+<tr><td><strong>Profile wyszukiwania</strong></td><td>Opisy działalności Twojej firmy, na podstawie których Mimira rekomenduje konkretne przetargi i analizuje je wg Twoich kryteriów</td></tr>
+<tr><td><strong>Dokumenty</strong></td><td>Miejsce na wgranie dokumentów pomocnych w przygotowaniu ofert przetargowych (odpis z KRS, certyfikaty, referencje)</td></tr>
+<tr><td><strong>Ustawienia</strong></td><td>Dodawanie nowych użytkowników, zarządzanie subskrypcją, inne zmiany na koncie</td></tr>
 </table>
+<img src="img/img_041.png" alt="Panel boczny — zakładki nawigacyjne" class="si" loading="lazy">
 </div>
 
-<div class="sp" id="krok-3">
-<h3>Krok 3: Kalendarz</h3>
-<p><strong>"Twoje przetargi → Kalendarz"</strong> pokazuje terminy w układzie kalendarza.</p>
-<img src="img/img_044.png" alt="Screenshot" class="si" loading="lazy">
-<p>Możesz wyświetlić:</p>
+<div class="sp" id="lista">
+<h3>5.3 Twoje przetargi — Lista</h3>
+<p>Kliknij <strong>„Twoje przetargi → Lista"</strong>, żeby zobaczyć wszystkie zapisane przetargi (trafiają tu ze <a href="modul-3.html">Skrzynki odbiorczej</a> lub <a href="modul-6.html">Wyszukiwarki</a>).</p>
+<img src="img/img_042.png" alt="Lista Twoich przetargów" class="si" loading="lazy">
+
+<p>Każdy przetarg ma przypisany status, który możesz zmienić w dowolnym momencie. Kliknij status przy przetargu, żeby go zmienić.</p>
+<img src="img/img_043.png" alt="Zmiana statusu przetargu" class="si" loading="lazy">
+
+<p><strong>Co oznaczają poszczególne statusy:</strong></p>
+<table>
+<tr><th>Status</th><th>Opis</th></tr>
+<tr><td><strong>Samodzielny udział</strong></td><td>Przetarg dodany do listy bez generowania oferty przez Mimirę</td></tr>
+<tr><td><strong>Przygotowanie dokumentów ofertowych</strong></td><td>Pracujemy nad dokumentami lub czekamy na dokumenty uzupełniające od Ciebie</td></tr>
+<tr><td><strong>Dokumenty przygotowane</strong></td><td>Dokumenty ofertowe są gotowe, czekają na Twoje działanie</td></tr>
+<tr><td><strong>Złożono ofertę</strong></td><td>Oferta została złożona przez Twoją firmę. Uwaga: ten status aktualizujesz ręcznie</td></tr>
+<tr><td><strong>Wygrana / Przegrana / Zakończono</strong></td><td>Wynik przetargu. Uwaga: ten status aktualizujesz ręcznie</td></tr>
+<tr><td><strong>Odrzucono</strong></td><td>Przetargi odrzucone przez Ciebie z poziomu skrzynki odbiorczej</td></tr>
+<tr><td><strong>Anulowane</strong></td><td>Postępowanie anulowane przez zamawiającego. Ten status aktualizujemy automatycznie</td></tr>
+</table>
+
+<p><strong>Poza tym na liście przetargów możesz samodzielnie edytować:</strong></p>
 <ul>
-<li>Terminy składania ofert / zadawania pytań</li>
-<li>Źródła: skrzynka odbiorcza, twoje przetargi, odrzucone, twoje wydarzenia</li>
+<li>finalną wartość Waszej oferty</li>
+<li>wartość oferty, która wygrała w tym przetargu</li>
+<li>notatki wewnętrzne</li>
+<li>przypisanego użytkownika (osoba odpowiedzialna za przetarg po Waszej stronie)</li>
 </ul>
-<img src="img/img_045.png" alt="Screenshot" class="si" loading="lazy">
-<p>Widoki: miesiąc, tydzień, harmonogram.</p>
-<img src="img/img_046.png" alt="Screenshot" class="si" loading="lazy">
-<img src="img/img_047.png" alt="Screenshot" class="si" loading="lazy">
-<p>Najedz na termin, żeby zobaczyć szybkie podsumowanie.</p>
-<img src="img/img_048.png" alt="Screenshot" class="si" loading="lazy">
-<p>Zapisz wydarzenie do kalendarza Google lub Outlook.</p>
-<div class="tp"><strong>💡 Uwaga:</strong> Jeśli zamawiający zmieni termin, aktualizujemy tylko kalendarz Mimira — nie Twój Google/Outlook.</div>
-<img src="img/img_049.png" alt="Screenshot" class="si" loading="lazy">
-<p>Widok harmonogramu:</p>
-<img src="img/img_050.png" alt="Screenshot" class="si" loading="lazy">
-<p>Możesz też tworzyć własne przypomnienia:</p>
-<img src="img/img_051.png" alt="Screenshot" class="si" loading="lazy">
 </div>
 
-<div class="sp" id="krok-4">
-<h3>Krok 4: Dodaj użytkowników</h3>
-<p>Jeśli ktoś w Twojej firmie też pracuje z przetargami, dodaj go do konta. Każdy dostaje własny login i widzi te same przetargi.</p>
-<img src="img/img_052.png" alt="Screenshot" class="si" loading="lazy">
-<p>Zaproś nowego członka zespołu wpisując imię i e-mail. Dostanie własne dane do logowania.</p>
-<div class="tp"><strong>💡 Uwaga:</strong> Liczba członków zespołu zależy od Twojego planu subskrypcji.</div>
+<div class="sp" id="kalendarz">
+<h3>5.4 Twoje przetargi — Kalendarz</h3>
+<p><strong>„Twoje przetargi → Kalendarz"</strong> pokazuje terminy w znanym układzie kalendarza.</p>
+<img src="img/img_044.png" alt="Widok kalendarza — miesiąc" class="si" loading="lazy">
+
+<h4>5.4.1 Terminy i źródła przetargów do wyświetlenia</h4>
+<p>W kalendarzu możesz wyświetlić terminy składania ofert, terminy zadawania pytań lub wybrać konkretne źródła przetargów, odnośnie których chcesz wyświetlić dane:</p>
+<ul>
+<li><strong>skrzynka odbiorcza</strong> — dopasowane przetargi</li>
+<li><strong>Twoje przetargi</strong> — przetargi, dla których przygotowujesz ofertę lub przesunęliście do zakładki „Twoje przetargi" z innym statusem</li>
+<li><strong>odrzucone przetargi</strong></li>
+<li><strong>Twoje wydarzenia</strong> — przypomnienia dodane przez Ciebie ręcznie</li>
+</ul>
+<p>Kolor punktów dot. danego przetargu odpowiada kolorowi statusu: niebieski = samodzielny udział, żółty = oferta w przygotowaniu przez Mimirę itd.</p>
+<img src="img/img_045.png" alt="Kalendarz — filtrowanie wg źródeł i statusów" class="si" loading="lazy">
+
+<h4>5.4.2 Widoki kalendarza</h4>
+<p>Kalendarz możesz też wyświetlić z widokiem całego miesiąca, tygodnia lub w formie harmonogramu.</p>
+<img src="img/img_046.png" alt="Widok miesiąca" class="si" loading="lazy">
+
+<p>W widoku tygodnia możesz skupić się na najbliższych upływających terminach z uwzględnieniem konkretnych godzin.</p>
+<img src="img/img_047.png" alt="Widok tygodnia" class="si" loading="lazy">
+
+<p>Podobną funkcję pełni widok harmonogramu — w tym wypadku to lista (analogiczna do widocznej na stronie głównej Mimiry).</p>
+<img src="img/img_048.png" alt="Widok harmonogramu" class="si" loading="lazy">
+
+<h4>5.4.3 Szczegóły przetargu i przypomnienia</h4>
+<p>Aby wyświetlić szczegóły danego przetargu, po prostu najedź na wybrany termin, a pojawi się krótkie podsumowanie i status danego przetargu.</p>
+<img src="img/img_049.png" alt="Hover nad wydarzeniem w kalendarzu" class="si" loading="lazy">
+
+<p>Z tego poziomu możesz też zapisać wydarzenie z podanym terminem w swoim kalendarzu Google lub Outlook.</p>
+
+<div class="tw-ok"><strong>💡 Uwaga:</strong> jeśli ta data zmieni się po wprowadzeniu aktualizacji przez zamawiającego, zaktualizujemy tylko informacje w kalendarzu Mimira. Zmiana nie zostanie przeniesiona do Twojego kalendarza Google lub Outlook.</div>
+
+<p>Jeśli chcesz zapamiętać termin, którego Mimira nie zamieściła w kalendarzu, możesz też utworzyć własne przypomnienie.</p>
+<img src="img/img_050.png" alt="Tworzenie własnego przypomnienia" class="si" loading="lazy">
 </div>
+
+<div class="sp" id="ustawienia">
+<h3>5.5 Ustawienia ogólne</h3>
+<p>Ustawienia ogólne umożliwiają Ci:</p>
+<ul>
+<li>edytowanie danych Twojego profilu</li>
+<li>zresetowanie hasła dostępu do platformy</li>
+<li>ustawienie, jakiego rodzaju maile chcesz od nas otrzymywać</li>
+</ul>
+<img src="img/img_051.png" alt="Ustawienia ogólne — widok" class="si" loading="lazy">
+</div>
+
+<div class="sp" id="zespol">
+<h3>5.6 Ustawienia — zarządzanie zespołem</h3>
+<p>Jeśli w Twojej firmie ktoś jeszcze pracuje z przetargami, możesz dodać go do firmowego konta na Mimirze. Każdy użytkownik dostaje własny login i widzi te same przetargi.</p>
+<img src="img/img_052.png" alt="Ustawienia — zakładka Zespół" class="si" loading="lazy">
+
+<p>Lista członków zespołu dostępna jest w zakładce <strong>„Ustawienia → Zespół"</strong>, gdzie możesz edytować ich dane lub zaprosić nowe osoby wpisując ich imię oraz adres e-mail.</p>
+<div class="ss"><strong>Screenshot: Zaproszenie nowego członka zespołu (formularz)</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<p>Nowy użytkownik otrzyma na podany adres e-mail spersonalizowane informacje do logowania wraz z linkiem do platformy.</p>
+<div class="ss"><strong>Screenshot: E-mail powitalny dla nowego członka zespołu</strong>Grafika zostanie dodana po finalnym uzupełnieniu instrukcji.</div>
+
+<div class="tw-warn"><strong>⚠️ Uwaga!</strong> Liczba możliwych członków zespołu jest zależna od Twojego planu i poziomu subskrypcji — szczegóły w <a href="modul-7.html">Module 7: Plany i cennik</a>.</div>
+
+<p>To wszystko! Od teraz poruszanie się po platformie Mimira nie powinno być już dla Ciebie wyzwaniem 🙂 Możesz więc przejść do kolejnego modułu, opisującego jak możesz przeszukiwać całą naszą bazę zamówień publicznych.</p>
+</div>
+
+<div class="twb tw" style="max-width:var(--mw);margin:0 auto 24px"><h3>Podsumowanie</h3><ul>
+<li>Dashboard = pierwsza rzecz po zalogowaniu — statystyki i najbliższe terminy</li>
+<li>Panel boczny = 8 zakładek (Strona główna, Wyszukiwarka, Skrzynka, Twoje przetargi × 2, Profile, Dokumenty, Ustawienia)</li>
+<li>Status każdego Twojego przetargu możesz zmienić jednym kliknięciem</li>
+<li>Kalendarz ma 3 widoki: miesiąc / tydzień / harmonogram</li>
+<li>Terminy możesz wyeksportować do Google lub Outlook</li>
+<li>Zespół dodajesz w Ustawieniach — limit użytkowników zależy od planu</li>
+</ul></div>
 </section>
-
-<div class="scr"><h3>📹 Skrypt screencastu: Dashboard i zarządzanie (~2 min)</h3><div class="sc"><h4>Scena 1 (0:00-0:15): Intro</h4><p>Cześć, pokażę Ci jak zarządzać przetargami na dashboardzie.</p><ul><li>Cel: pełna kontrola nad pipeline przetargowym</li></ul></div><div class="sc"><h4>Scena 2 (0:15-0:45): Dashboard</h4><p>Pokaż stronę główną.</p><ul><li>Nowe przetargi w tym tygodniu</li><li>Oczekujące oferty</li><li>Nadchodzące terminy</li></ul></div><div class="sc"><h4>Scena 3 (0:45-1:15): Lista i statusy</h4><p>Pokaż listę przetargów.</p><ul><li>Otwórz Twoje przetargi → Lista</li><li>Pokaż statusy</li><li>Zmień status — kliknij i wybierz</li></ul></div><div class="sc"><h4>Scena 4 (1:15-1:45): Kalendarz</h4><p>Pokaż widoki kalendarza.</p><ul><li>Widok miesiąca</li><li>Widok tygodnia — szczegóły godzinowe</li><li>Harmonogram</li><li>Zapisz do Google/Outlook</li></ul></div><div class="sc"><h4>Scena 5 (1:45-2:00): Zespół + podsumowanie</h4><p></p><ul><li>Pokaż jak dodać użytkownika</li><li>Podsumuj możliwości dashboardu</li><li>Zachęć do przejścia do Modułu 6</li></ul></div></div>
-
-<section class="tw"><div class="twb"><h3>Podsumowanie</h3><ul>
-<li>Dashboard to Twoje centrum kontroli</li>
-<li>Statusy działają jak pipeline sprzedażowy</li>
-<li>Kalendarz łączy się z Google/Outlook</li>
-<li>Dodaj współpracowników — każdy widzi te same przetargi</li>
-</ul></div></section>
-
-<div class="mcta"><a href="https://app.mimira.eu">Otwórz swój dashboard →</a></div>
-<div class="mnv"><a href="modul-4.html">← Moduł 4: Wyszukiwarka</a><a href="modul-6.html">Moduł 6: Plany i cennik →</a></div>
+<div class="mcta"><a href="https://platform.mimira.eu">Otwórz platformę →</a></div>
+<div class="mnv"><a href="modul-4.html">← Moduł 4: Przygotowanie ofert</a><a href="modul-6.html">Moduł 6: Wyszukiwarka →</a></div>
 <footer><p>Mimira © 2026 · <a href="https://mimira.eu">mimira.eu</a> · <a href="mailto:info@mimira.eu">info@mimira.eu</a></p></footer></body></html>
